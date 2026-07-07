@@ -1,0 +1,7 @@
+includePatterns:
+  - sourceProject: '{{ref(project.current.projectId)}}'
+    sourceTask: '01_land_sap_hana_zfcst_a03-lpag'
+    tablePattern: '%'
+    type: TABLE
+excludePatterns: []
+explicitlySelected: []

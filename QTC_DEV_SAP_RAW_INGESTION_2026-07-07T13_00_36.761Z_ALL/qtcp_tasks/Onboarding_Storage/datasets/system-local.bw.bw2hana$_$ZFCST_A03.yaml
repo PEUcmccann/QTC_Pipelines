@@ -1,0 +1,19 @@
+properties:
+  id: system_local$2E$bw$2E$bw2hana$2F$zfcst_a03-lpaj
+  name: 'system-local.bw.bw2hana$_$ZFCST_A03'
+  type: STORAGE
+  inputDatasets:
+    - type: NONE
+      datasetId: system_local$2E$bw$2E$bw2hana$2F$zfcst_a03
+      name: 'system-local.bw.bw2hana/ZFCST_A03'
+      projectId: '{{ref(project.current.projectId)}}'
+      taskId: '01_land_sap_hana_zfcst_a03-lpag'
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+  virtualDataset: false
+  description: ''

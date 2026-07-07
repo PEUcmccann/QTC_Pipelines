@@ -1,0 +1,20 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  space: 'ref{project.current.spaceId}'
+  type: DATA_PIPELINE
+  description: 'DEV ingestion project for loading SAP HANA BW2HANA object ZFCST_A03 into Snowflake DEV_RAW SAP RAW/Bronze layer for Qlik Sense Cloud analytics.'
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+  snowflakeStorageIntegration: ''
+settings:
+  artifactsNaming:
+    suffixLiveViews: __live
+    suffixChangesView: __changes
+    suffixCurrentView: ''
+    suffixHistoryViews: __history
+    suffixLiveHistoryViews: __live_history
+    suffixInternalSchema: __internal
+    prefixSchema: '{{project.current.prefixSchema}}'
+    defaultSchemaNameOption: LOWER_CASE

@@ -1,0 +1,15 @@
+scheduling:
+  - enabled: false
+    schedulingType: TIME_BASED
+    timeBasedScheduling:
+      schedule:
+        - RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0
+      startDateTime: 2026-07-03T12:58:56.6970000Z
+      timezone: Etc/UTC
+      fullloadInterval: 0
+    eventBasedScheduling:
+      eventSchedulingType: ANY_INPUT_TASK
+      triggerApps: []
+    runOnReconnect: ONSCHEDULED
+    description: ''
+    version: '1'

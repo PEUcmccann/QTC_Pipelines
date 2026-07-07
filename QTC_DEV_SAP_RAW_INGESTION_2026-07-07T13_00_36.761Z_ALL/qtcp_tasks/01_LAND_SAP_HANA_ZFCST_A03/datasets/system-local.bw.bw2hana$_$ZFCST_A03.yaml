@@ -1,0 +1,1201 @@
+properties:
+  id: system_local$2E$bw$2E$bw2hana$2F$zfcst_a03
+  name: 'system-local.bw.bw2hana$_$ZFCST_A03'
+  type: LANDING
+  inputDatasets:
+    - type: VIEW
+      name: 'system-local.bw.bw2hana/ZFCST_A03'
+      projectId: '{{ref(project.current.projectId)}}'
+      taskId: '01_land_sap_hana_zfcst_a03-lpag'
+      schema: '{{task.01_land_sap_hana_zfcst_a03-lpag:null$_$_SYS_BIC.schema}}'
+  virtualDataset: false
+  description: ''
+transformations:
+  filter:
+    expressionStatement: "--filter: \"0FISCPER\" >= '2025001' AND \"0FISCPER\" <= '2026006'"
+    alias: []
+  columnTransformations: []
+sourceTable:
+  schema: '{{task.01_land_sap_hana_zfcst_a03-lpag:null$_$_SYS_BIC.schema}}'
+  type: VIEW
+  name: 'system-local.bw.bw2hana/ZFCST_A03'
+  tableDef:
+    columns:
+      - name: '0APO_DPVERS'
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0apo_dpvers'
+        flags: NONE
+      - name: '0CALDAY'
+        ordinal: 2
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 8
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0calday'
+        flags: NONE
+      - name: '0CALMONTH'
+        ordinal: 3
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 6
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0calmonth'
+        flags: NONE
+      - name: '0CALMONTH2'
+        ordinal: 4
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0calmonth2'
+        flags: NONE
+      - name: '0CALWEEK'
+        ordinal: 5
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 6
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0calweek'
+        flags: NONE
+      - name: '0CALYEAR'
+        ordinal: 6
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0calyear'
+        flags: NONE
+      - name: '0COMP_CODE'
+        ordinal: 7
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0comp_code'
+        flags: NONE
+      - name: '0COMP_CODE___T'
+        ordinal: 8
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0comp_code___t'
+        flags: NONE
+      - name: '0COUNTRY'
+        ordinal: 9
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 3
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0country'
+        flags: NONE
+      - name: '0COUNTRY___T'
+        ordinal: 10
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 20
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0country___t'
+        flags: NONE
+      - name: '0CUSTOMER'
+        ordinal: 11
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0customer'
+        flags: NONE
+      - name: '0CUSTOMER___T'
+        ordinal: 12
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0customer___t'
+        flags: NONE
+      - name: '0CUST_GROUP'
+        ordinal: 13
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0cust_group'
+        flags: NONE
+      - name: '0CUST_GROUP___T'
+        ordinal: 14
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 20
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0cust_group___t'
+        flags: NONE
+      - name: '0CUST_SALES'
+        ordinal: 15
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0cust_sales'
+        flags: NONE
+      - name: '0CUST_SALES___T'
+        ordinal: 16
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0cust_sales___t'
+        flags: NONE
+      - name: '0DISTR_CHAN'
+        ordinal: 17
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0distr_chan'
+        flags: NONE
+      - name: '0DISTR_CHAN___T'
+        ordinal: 18
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 20
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0distr_chan___t'
+        flags: NONE
+      - name: '0DIVISION'
+        ordinal: 19
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0division'
+        flags: NONE
+      - name: '0DIVISION___T'
+        ordinal: 20
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 20
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0division___t'
+        flags: NONE
+      - name: '0FISCPER'
+        ordinal: 21
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 7
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0fiscper'
+        flags: NONE
+      - name: '0FISCVARNT'
+        ordinal: 22
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0fiscvarnt'
+        flags: NONE
+      - name: '0FISCYEAR'
+        ordinal: 23
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0fiscyear'
+        flags: NONE
+      - name: '0MATERIAL'
+        ordinal: 24
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0material'
+        flags: NONE
+      - name: '0MATERIAL___T'
+        ordinal: 25
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0material___t'
+        flags: NONE
+      - name: '0MAT_PLANT'
+        ordinal: 26
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0mat_plant'
+        flags: NONE
+      - name: '0MAT_PLANT___T'
+        ordinal: 27
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0mat_plant___t'
+        flags: NONE
+      - name: '0MAT_SALES'
+        ordinal: 28
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0mat_sales'
+        flags: NONE
+      - name: '0MAT_SALES___T'
+        ordinal: 29
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0mat_sales___t'
+        flags: NONE
+      - name: '0PLANT'
+        ordinal: 30
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0plant'
+        flags: NONE
+      - name: '0PLANT___T'
+        ordinal: 31
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0plant___t'
+        flags: NONE
+      - name: '0PROMOTION'
+        ordinal: 32
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0promotion'
+        flags: NONE
+      - name: '0PROMOTION___T'
+        ordinal: 33
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 60
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0promotion___t'
+        flags: NONE
+      - name: '0REQTSN'
+        ordinal: 34
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 23
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0reqtsn'
+        flags: NONE
+      - name: '0SALESORG'
+        ordinal: 35
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0salesorg'
+        flags: NONE
+      - name: '0SALESORG___T'
+        ordinal: 36
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 60
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0salesorg___t'
+        flags: NONE
+      - name: '0SALES_OFF'
+        ordinal: 37
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sales_off'
+        flags: NONE
+      - name: '0SALES_OFF___T'
+        ordinal: 38
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 20
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sales_off___t'
+        flags: NONE
+      - name: '0SALES_UNIT'
+        ordinal: 39
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 3
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sales_unit'
+        flags: NONE
+      - name: '0SALES_UNIT___T'
+        ordinal: 40
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sales_unit___t'
+        flags: NONE
+      - name: '0SOLD_TO'
+        ordinal: 41
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 10
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sold_to'
+        flags: NONE
+      - name: '0SOLD_TO___T'
+        ordinal: 42
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: '0sold_to___t'
+        flags: NONE
+      - name: ZAPOSNAP
+        ordinal: 43
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 4
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zaposnap
+        flags: NONE
+      - name: ZCOUNTMAT
+        ordinal: 44
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 3
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zcountmat
+        flags: NONE
+      - name: ZCST_MAT
+        ordinal: 45
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 18
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zcst_mat
+        flags: NONE
+      - name: ZCUSTMATR
+        ordinal: 46
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 35
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zcustmatr
+        flags: NONE
+      - name: ZCWEEK
+        ordinal: 47
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zcweek
+        flags: NONE
+      - name: ZPRODNR
+        ordinal: 48
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 40
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zprodnr
+        flags: NONE
+      - name: ZWEEK
+        ordinal: 49
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 2
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zweek
+        flags: NONE
+      - name: ZWEEK_YR
+        ordinal: 50
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 6
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zweek_yr
+        flags: NONE
+      - name: ZWNAPSHOT
+        ordinal: 51
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: WSTRING
+          length: 6
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zwnapshot
+        flags: NONE
+      - name: '1ROWCOUNT'
+        ordinal: 52
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 0
+          originalTypeFull: ''
+        id: '1rowcount'
+        flags: NONE
+      - name: ZACTSALE
+        ordinal: 53
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zactsale
+        flags: NONE
+      - name: ZACT_LY1
+        ordinal: 54
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zact_ly1
+        flags: NONE
+      - name: ZACT_LY2
+        ordinal: 55
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zact_ly2
+        flags: NONE
+      - name: ZAVG_PROM
+        ordinal: 56
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zavg_prom
+        flags: NONE
+      - name: ZAVPSALES
+        ordinal: 57
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zavpsales
+        flags: NONE
+      - name: ZBASESALE
+        ordinal: 58
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zbasesale
+        flags: NONE
+      - name: ZCLESALE
+        ordinal: 59
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zclesale
+        flags: NONE
+      - name: ZCOM_PROM
+        ordinal: 60
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zcom_prom
+        flags: NONE
+      - name: ZCUSOLDW
+        ordinal: 61
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zcusoldw
+        flags: NONE
+      - name: ZCUSTFCT2
+        ordinal: 62
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zcustfct2
+        flags: NONE
+      - name: ZCUSTFOLD
+        ordinal: 63
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zcustfold
+        flags: NONE
+      - name: ZCUSTFORC
+        ordinal: 64
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zcustforc
+        flags: NONE
+      - name: ZCUSTID
+        ordinal: 65
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: INT4
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zcustid
+        flags: NONE
+      - name: ZDESECLE
+        ordinal: 66
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdesecle
+        flags: NONE
+      - name: ZDICHAIND
+        ordinal: 67
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: INT4
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zdichaind
+        flags: NONE
+      - name: ZDISTCHLS
+        ordinal: 68
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdistchls
+        flags: NONE
+      - name: ZDOD
+        ordinal: 69
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdod
+        flags: NONE
+      - name: ZDODPCT
+        ordinal: 70
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdodpct
+        flags: NONE
+      - name: ZDPEXTRA1
+        ordinal: 71
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: INT4
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zdpextra1
+        flags: NONE
+      - name: ZDPEXTRA2
+        ordinal: 72
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdpextra2
+        flags: NONE
+      - name: ZDPEXTRA3
+        ordinal: 73
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdpextra3
+        flags: NONE
+      - name: ZDPGETOSP
+        ordinal: 74
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdpgetosp
+        flags: NONE
+      - name: ZDPSOTOSP
+        ordinal: 75
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zdpsotosp
+        flags: NONE
+      - name: ZFFGETOSP
+        ordinal: 76
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zffgetosp
+        flags: NONE
+      - name: ZFFSOTOSP
+        ordinal: 77
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zffsotosp
+        flags: NONE
+      - name: ZFINALFC
+        ordinal: 78
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zfinalfc
+        flags: NONE
+      - name: ZFINAL_LS
+        ordinal: 79
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zfinal_ls
+        flags: NONE
+      - name: ZFORCADJU
+        ordinal: 80
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zforcadju
+        flags: NONE
+      - name: ZFORCPROM
+        ordinal: 81
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zforcprom
+        flags: NONE
+      - name: ZFOREOLD
+        ordinal: 82
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zforeold
+        flags: NONE
+      - name: ZFORSEA
+        ordinal: 83
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zforsea
+        flags: NONE
+      - name: ZGROWTH
+        ordinal: 84
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zgrowth
+        flags: NONE
+      - name: ZLOCSPLIT
+        ordinal: 85
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zlocsplit
+        flags: NONE
+      - name: ZLTGRP
+        ordinal: 86
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zltgrp
+        flags: NONE
+      - name: ZMANADJ
+        ordinal: 87
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zmanadj
+        flags: NONE
+      - name: ZPRMO
+        ordinal: 88
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zprmo
+        flags: NONE
+      - name: ZPROCON_C
+        ordinal: 89
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zprocon_c
+        flags: NONE
+      - name: ZPROINLS
+        ordinal: 90
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: INT4
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zproinls
+        flags: NONE
+      - name: ZPROMHIS
+        ordinal: 91
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zpromhis
+        flags: NONE
+      - name: ZPROM_ADJ
+        ordinal: 92
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zprom_adj
+        flags: NONE
+      - name: ZPROM_UNC
+        ordinal: 93
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zprom_unc
+        flags: NONE
+      - name: ZPROUNC_C
+        ordinal: 94
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zprounc_c
+        flags: NONE
+      - name: ZSEASINDE
+        ordinal: 95
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: INT4
+          length: 0
+          precision: 0
+          scale: 0
+          originalTypeFull: ''
+        id: zseasinde
+        flags: NONE
+      - name: ZSTATFORC
+        ordinal: 96
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: zstatforc
+        flags: NONE
+      - name: ZTENDERS
+        ordinal: 97
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: ztenders
+        flags: NONE
+      - name: ZTUKSPLIT
+        ordinal: 98
+        nullable: true
+        primaryKeyOrdinal: 0
+        datatype:
+          type: NUMERIC
+          length: 0
+          precision: 17
+          scale: 3
+          originalTypeFull: ''
+        id: ztuksplit
+        flags: NONE
+    secureQri: ''
+    fullLoadOnly: false

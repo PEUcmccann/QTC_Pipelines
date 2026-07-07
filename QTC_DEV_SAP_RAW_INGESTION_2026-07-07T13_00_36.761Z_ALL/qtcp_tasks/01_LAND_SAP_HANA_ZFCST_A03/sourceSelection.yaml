@@ -1,0 +1,7 @@
+sourceConnection: '{{task.01_land_sap_hana_zfcst_a03-lpag.sourceConnection}}'
+includePatterns: []
+excludePatterns: []
+explicitlySelected:
+  - name: 'system-local.bw.bw2hana/ZFCST_A03'
+    schema: '{{task.01_land_sap_hana_zfcst_a03-lpag:null$_$_SYS_BIC.schema}}'
+    type: VIEW
