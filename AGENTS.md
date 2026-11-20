@@ -26,6 +26,8 @@ This repo holds Qlik Talend Cloud (QTC) Data Integration project exports. Each e
 
 Run `qlik di-project validate <id> --context pilgrims`. It must pass. Put the result in the pull request body.
 
+Run `pwsh scripts/check.ps1`. It must show `check: OK`. To run it before each commit, set `git config core.hooksPath .githooks` once.
+
 ## Writing to Git
 
 Before you write text to Git or GitHub, apply the text rules in `CODING_STANDARDS.md`. This covers issues, comments, wayfinder maps, commit messages and pull request bodies.
