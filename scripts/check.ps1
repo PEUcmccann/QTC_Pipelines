@@ -36,7 +36,7 @@ try {
       $n++
       if ($line -match '^\s*```') { $inFence = -not $inFence; continue }
       if ($inFence -or $line -match '^\s*#' -or $line -match '^\s*\|?\s*:?-{3,}') { continue }
-      $t = $line -replace '`[^`]*`', 'X' -replace '\[([^\]]*)\]\([^)]*\)', '$1'
+      $t = $line -replace '`[^`]*`', 'X' -replace '\*\*|__', '' -replace '\[([^\]]*)\]\([^)]*\)', '$1'
       foreach ($cell in $t -split '\|') {
         $c = $cell -replace '^\s*([-*]|\d+\.)\s+', ''
         foreach ($s in $c -split '(?<=[.!?])\s+') {
