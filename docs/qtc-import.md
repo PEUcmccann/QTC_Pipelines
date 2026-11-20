@@ -27,7 +27,7 @@ Copy the column types from the matching `PROD_RAW.SAP` table. The dataset file n
 | Import fails with "required bindings are missing" | The first import into a new project always fails. | `import-project.ps1` sets the variables and imports again. |
 | The same error again | A BOM in a JSON file, or a zip with `\` in entry names. | Use `pack-project.ps1`. |
 | "Operation PROJECT_IMPORT already exists" | The project holds an import lock. The API cannot clear it or delete the project. | Create a new project. Delete the old one in the Qlik Cloud UI. |
-| A task is `NOT_RUNNABLE` after prepare, with an empty or "Not found" message | The gateway task did not deploy. Project prepare can report `failed: 0` and still leave this state. | `qlik di-project di-task prepare --di-projectId <id> --di-taskId <task> --allowRecreate`. |
+| A task is `NOT_RUNNABLE` with "Not found" after prepare | The gateway task did not deploy. | `qlik di-project di-task prepare --di-projectId <id> --di-taskId <task> --allowRecreate`. |
 | A full load shows no rows after 10 minutes | HANA times out on the whole view. | Slice the load. See `docs/bom-slicing.md`. |
 
 ## Notes
@@ -35,5 +35,6 @@ Copy the column types from the matching `PROD_RAW.SAP` table. The dataset file n
 - `runtime state` shows full-load counts only in `lastRun.fullLoad`. Run history stays empty until a run ends.
 - Action states include `EXECUTING`. Wait for `COMPLETED` or `FAILED`.
 - Each slice task truncates its table before it loads.
-- For a PROD build, copy the export, swap the connection names in `bindings.json` (`PROD.PROD_SRC_SAP_HBP_BW`, `PROD.PROD_TGT_SNOWFLAKE_PROD_RAW`) and put the PROD connection IDs in `nameToIdMap` in `vars.json`. Create the project in the PROD space.
-- Prepare the whole project with `--allowRecreate` if the tasks stay `NOT_RUNNABLE`. Check `runtime state` of each task for `READY_TO_RUN`.
+- For a PROD build from a DEV export, follow the steps in `docs/bom-slicing.md`.
+- Project prepare can report `failed: 0` while the tasks stay `NOT_RUNNABLE` with an empty message. Then prepare the project again with `--allowRecreate`.
+- After prepare, check the `runtime state` of each task. Each task must show `READY_TO_RUN`.

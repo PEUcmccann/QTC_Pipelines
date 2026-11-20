@@ -1,6 +1,7 @@
--- Reconciliation for PROD_STAGING.SAP.BILLOFMATERIALS. Every row of the first result must show PASS.
--- A REVIEW row needs an explanation on the ticket.
+-- Reconciliation for PROD_STAGING.SAP.BILLOFMATERIALS. See docs/bom-slicing.md.
+-- No row of the first result may show FAIL. A REVIEW row needs an explanation on the ticket.
 -- Run as ENGINEER_ROLE after all 11 slices have loaded and the dynamic table has refreshed.
+-- Check 5 reads DEV_RAW, so it needs DEV access. The QVD check is done by hand, because the QVD is not in Snowflake.
 
 WITH slices AS (
   SELECT 1 AS slice, PLANT, BILLOFMATERIAL FROM PROD_RAW.SAP.BILLOFMATERIALS_01 UNION ALL
@@ -32,7 +33,8 @@ checks AS (
   SELECT 1 AS ord, 'Combined rows equal sum of slices' AS check_name, (SELECT COUNT(*) FROM PROD_STAGING.SAP.BILLOFMATERIALS) AS actual, (SELECT SUM(n) FROM per_slice) AS expected, '=' AS op
   UNION ALL SELECT 2, 'Largest slice is 500000 rows or fewer', (SELECT MAX(n) FROM per_slice), 500000, '<='
   UNION ALL SELECT 3, 'Keys that appear in more than one slice', (SELECT n FROM overlap), 0, '='
-  UNION ALL SELECT 4, 'Plants whose count differs from DEV (explain each)', (SELECT n FROM plant_diff), 0, 'review'
+  UNION ALL SELECT 4, 'Columns in the combined object', (SELECT COUNT(*) FROM PROD_STAGING.INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'SAP' AND TABLE_NAME = 'BILLOFMATERIALS'), 29, '='
+  UNION ALL SELECT 5, 'Plants whose count differs from DEV (explain each)', (SELECT n FROM plant_diff), 0, 'review'
 )
 SELECT check_name, actual, expected,
        CASE WHEN op = 'review' THEN IFF(actual = expected, 'PASS', 'REVIEW')

@@ -1,5 +1,10 @@
 -- Combined object for the 11 BOM slice tables. See docs/bom-slicing.md.
+-- Run as ENGINEER_ROLE, so that ENGINEER_ROLE owns the dynamic table.
+-- COPY GRANTS keeps the existing grants when you run this file again.
+USE ROLE ENGINEER_ROLE;
+
 CREATE OR REPLACE DYNAMIC TABLE PROD_STAGING.SAP.BILLOFMATERIALS
+  COPY GRANTS
   TARGET_LAG = '24 hours'
   WAREHOUSE = STAGING_WH
   COMMENT = 'SAP BW/4HANA C_BOMITEMVALIDMATERIALSEXPLOSION (96 plants). Union of slice tables PROD_RAW.SAP.BILLOFMATERIALS_01..11. Project SAP_BW_BILLOFMATERIALS_SLICED.'
