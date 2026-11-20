@@ -1,0 +1,7 @@
+sourceConnection: '{{task.sap_bw_billofmaterials_07-b07x.sourceConnection}}'
+includePatterns: []
+excludePatterns: []
+explicitlySelected:
+  - name: jbs_bw4_hana.edw.plm.bom/C_BOMITEMVALIDMATERIALSEXPLOSION
+    schema: '{{task.sap_bw_billofmaterials_07-b07x:null$_$_SYS_BIC.schema}}'
+    type: VIEW

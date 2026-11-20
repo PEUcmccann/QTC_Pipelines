@@ -35,3 +35,6 @@ Copy the column types from the matching `PROD_RAW.SAP` table. The dataset file n
 - `runtime state` shows full-load counts only in `lastRun.fullLoad`. Run history stays empty until a run ends.
 - Action states include `EXECUTING`. Wait for `COMPLETED` or `FAILED`.
 - Each slice task truncates its table before it loads.
+- For a PROD build from a DEV export, follow the steps in `docs/bom-slicing.md`.
+- Project prepare can report `failed: 0` while the tasks stay `NOT_RUNNABLE` with an empty message. Then prepare the project again with `--allowRecreate`.
+- After prepare, check the `runtime state` of each task. Each task must show `READY_TO_RUN`.

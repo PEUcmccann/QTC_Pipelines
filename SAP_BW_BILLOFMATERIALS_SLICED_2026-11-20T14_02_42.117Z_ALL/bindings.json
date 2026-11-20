@@ -1,0 +1,130 @@
+{
+  "variables": {
+    "cloudStagingConnection": null,
+    "platformConnection": null,
+    "projectName": "SAP_BW_BILLOFMATERIALS_SLICED",
+    "task.sap_bw_billofmaterials_01-b01x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_01-b01x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_01-b01x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_01-b01x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_01-b01x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_02-b02x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_02-b02x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_02-b02x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_02-b02x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_02-b02x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_03-b03x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_03-b03x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_03-b03x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_03-b03x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_03-b03x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_04-b04x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_04-b04x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_04-b04x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_04-b04x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_04-b04x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_05-b05x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_05-b05x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_05-b05x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_05-b05x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_05-b05x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_06-b06x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_06-b06x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_06-b06x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_06-b06x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_06-b06x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_07-b07x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_07-b07x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_07-b07x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_07-b07x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_07-b07x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_08-b08x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_08-b08x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_08-b08x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_08-b08x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_08-b08x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_09-b09x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_09-b09x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_09-b09x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_09-b09x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_09-b09x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_10-b10x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_10-b10x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_10-b10x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_10-b10x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_10-b10x:null$_$_SYS_BIC.schema": "_SYS_BIC",
+    "task.sap_bw_billofmaterials_11-b11x.sourceConnection": "{{id(connection, PROD.PROD_SRC_SAP_HBP_BW)}}",
+    "task.sap_bw_billofmaterials_11-b11x.targetConnection": "{{id(connection, PROD.PROD_TGT_SNOWFLAKE_PROD_RAW)}}",
+    "task.sap_bw_billofmaterials_11-b11x.targetSchema": "SAP",
+    "task.sap_bw_billofmaterials_11-b11x.targetStorageConnection": null,
+    "task.sap_bw_billofmaterials_11-b11x:null$_$_SYS_BIC.schema": "_SYS_BIC"
+  },
+  "connectionProperties": {
+    "task.sap_bw_billofmaterials_01-b01x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_01-b01x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_02-b02x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_02-b02x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_03-b03x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_03-b03x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_04-b04x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_04-b04x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_05-b05x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_05-b05x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_06-b06x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_06-b06x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_07-b07x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_07-b07x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_08-b08x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_08-b08x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_09-b09x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_09-b09x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_10-b10x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_10-b10x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_11-b11x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_11-b11x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}
