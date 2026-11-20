@@ -1,0 +1,130 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.sap_bw_billofmaterials_01-b01x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_01-b01x.targetConnection": "",
+    "task.sap_bw_billofmaterials_01-b01x.targetSchema": "",
+    "task.sap_bw_billofmaterials_01-b01x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_01-b01x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_02-b02x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_02-b02x.targetConnection": "",
+    "task.sap_bw_billofmaterials_02-b02x.targetSchema": "",
+    "task.sap_bw_billofmaterials_02-b02x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_02-b02x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_03-b03x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_03-b03x.targetConnection": "",
+    "task.sap_bw_billofmaterials_03-b03x.targetSchema": "",
+    "task.sap_bw_billofmaterials_03-b03x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_03-b03x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_04-b04x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_04-b04x.targetConnection": "",
+    "task.sap_bw_billofmaterials_04-b04x.targetSchema": "",
+    "task.sap_bw_billofmaterials_04-b04x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_04-b04x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_05-b05x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_05-b05x.targetConnection": "",
+    "task.sap_bw_billofmaterials_05-b05x.targetSchema": "",
+    "task.sap_bw_billofmaterials_05-b05x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_05-b05x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_06-b06x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_06-b06x.targetConnection": "",
+    "task.sap_bw_billofmaterials_06-b06x.targetSchema": "",
+    "task.sap_bw_billofmaterials_06-b06x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_06-b06x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_07-b07x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_07-b07x.targetConnection": "",
+    "task.sap_bw_billofmaterials_07-b07x.targetSchema": "",
+    "task.sap_bw_billofmaterials_07-b07x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_07-b07x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_08-b08x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_08-b08x.targetConnection": "",
+    "task.sap_bw_billofmaterials_08-b08x.targetSchema": "",
+    "task.sap_bw_billofmaterials_08-b08x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_08-b08x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_09-b09x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_09-b09x.targetConnection": "",
+    "task.sap_bw_billofmaterials_09-b09x.targetSchema": "",
+    "task.sap_bw_billofmaterials_09-b09x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_09-b09x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_10-b10x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_10-b10x.targetConnection": "",
+    "task.sap_bw_billofmaterials_10-b10x.targetSchema": "",
+    "task.sap_bw_billofmaterials_10-b10x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_10-b10x:null$_$_SYS_BIC.schema": "",
+    "task.sap_bw_billofmaterials_11-b11x.sourceConnection": "",
+    "task.sap_bw_billofmaterials_11-b11x.targetConnection": "",
+    "task.sap_bw_billofmaterials_11-b11x.targetSchema": "",
+    "task.sap_bw_billofmaterials_11-b11x.targetStorageConnection": "",
+    "task.sap_bw_billofmaterials_11-b11x:null$_$_SYS_BIC.schema": ""
+  },
+  "connectionProperties": {
+    "task.sap_bw_billofmaterials_01-b01x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_01-b01x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_02-b02x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_02-b02x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_03-b03x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_03-b03x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_04-b04x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_04-b04x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_05-b05x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_05-b05x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_06-b06x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_06-b06x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_07-b07x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_07-b07x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_08-b08x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_08-b08x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_09-b09x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_09-b09x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_10-b10x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_10-b10x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.sap_bw_billofmaterials_11-b11x.sourceConnection": {
+      "type": "repsrc_saphana"
+    },
+    "task.sap_bw_billofmaterials_11-b11x.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

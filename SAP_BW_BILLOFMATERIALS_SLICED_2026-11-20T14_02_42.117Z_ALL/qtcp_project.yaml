@@ -1,0 +1,9 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  type: DATA_MOVEMENT
+  description: ''
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+  snowflakeStorageIntegration: ''
